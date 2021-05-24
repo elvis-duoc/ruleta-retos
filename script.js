@@ -1,4 +1,4 @@
-  /**
+/**
  * Prize data will space out evenly on the deal wheel based on the amount of items available.
  * @param text [string] name of the prize
  * @param color [string] background color of the prize
@@ -31,7 +31,7 @@ const prizes = [
     reaction: "dancing"
   },
   {
-    text: "Eternal Damnation",
+    text: "Lavarse los Dientes",
     color: "hsl(350 60% 52%)",
     reaction: "laughing"
   },
@@ -41,7 +41,7 @@ const prizes = [
     reaction: "laughing"
   },
     {
-    text: "Eternal Damnation",
+    text: "Lavarse los Dientes1",
     color: "hsl(350 60% 52%)",
     reaction: "laughing"
   },
@@ -51,7 +51,7 @@ const prizes = [
     reaction: "laughing"
   },
       {
-    text: "Eternal Damnation",
+    text: "Lavarse los Dientes",
     color: "hsl(350 60% 52%)",
     reaction: "laughing"
   },

@@ -71,7 +71,10 @@ body {
   height: 50%;
   transform-origin: center right;
   transform: rotate(var(--rotate));
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .cap {
@@ -98,7 +101,8 @@ body {
   height: calc(var(--size) / 20);
   background: var(--lg);
   z-index: 1;
-  clip-path: polygon(20% 0, 100% 50%, 20% 100%, 0% 50%);
+  -webkit-clip-path: polygon(20% 0, 100% 50%, 20% 100%, 0% 50%);
+          clip-path: polygon(20% 0, 100% 50%, 20% 100%, 0% 50%);
   transform-origin: center left;
 }
 
@@ -135,7 +139,14 @@ body {
 }
 
 .is-spinning .ticker {
-  animation: tick 700ms cubic-bezier(0.34, 1.56, 0.64, 1);
+  -webkit-animation: tick 700ms cubic-bezier(0.34, 1.56, 0.64, 1);
+          animation: tick 700ms cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@-webkit-keyframes tick {
+  40% {
+    transform: rotate(-12deg);
+  }
 }
 
 @keyframes tick {
@@ -147,7 +158,29 @@ body {
 /* Selected prize animation */
 .prize.selected .text {
   color: white;
-  animation: selected 800ms ease;
+  -webkit-animation: selected 800ms ease;
+          animation: selected 800ms ease;
+}
+
+@-webkit-keyframes selected {
+  25% {
+    transform: scale(1.25);
+    text-shadow: 1vmin 1vmin 0 hsla(0 0% 0% / 0.1);
+  }
+  40% {
+    transform: scale(0.92);
+    text-shadow: 0 0 0 hsla(0 0% 0% / 0.2);
+  }
+  60% {
+    transform: scale(1.02);
+    text-shadow: 0.5vmin 0.5vmin 0 hsla(0 0% 0% / 0.1);
+  }
+  75% {
+    transform: scale(0.98);
+  }
+  85% {
+    transform: scale(1);
+  }
 }
 
 @keyframes selected {

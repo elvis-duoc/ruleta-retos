@@ -106,6 +106,7 @@ body {
   transform-origin: center left;
 }
 
+
 .btn-spin {
   color: hsl(0deg 0% 100%);
   background: var(--lg);

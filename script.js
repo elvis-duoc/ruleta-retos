@@ -1,70 +1,87 @@
-/**
- * Prize data will space out evenly on the deal wheel based on the amount of items available.
- * @param text [string] name of the prize
- * @param color [string] background color of the prize
- * @param reaction ['resting' | 'dancing' | 'laughing' | 'shocked'] Sets the reaper's animated reaction
- */
+
 const prizes = [
   {
-    text: "Lavarse los dientes",
+    text: "Lavarse los Dientes",
     color: "hsl(197 30% 43%)",
     reaction: "dancing"
   },
   { 
-    text: "Comer tu comida",
+    text: "Comer tu Comida",
     color: "hsl(173 58% 39%)",
     reaction: "laughing"
   },
   { 
-    text: "Usar tu smartphone",
+    text: "Usar tu Smartphone",
     color: "hsl(43 74% 66%)",
     reaction: "dancing" 
   },
   {
-    text: "Revolver el té o café",
+    text: "Revolver el Té o Café",
     color: "hsl(27 87% 67%)",
     reaction: "shocked"
   },
   {
-    text: "Free DIY Carwash",
+    text: "Hacer tu Desayuno",
     color: "hsl(12 76% 61%)",
     reaction: "dancing"
   },
   {
-    text: "Lavarse los Dientes",
+    text: "Hacer la Cama",
     color: "hsl(350 60% 52%)",
     reaction: "laughing"
   },
   {
-    text: "Used Travel Mug",
+    text: "Dibujar o Pintar",
     color: "hsl(91 43% 54%)",
     reaction: "laughing"
   },
-    {
-    text: "Lavarse los Dientes1",
+  {
+    text: "Escribir",
+    color: "hsl(140 36% 74%)",
+    reaction: "dancing"
+  },
+
+  {
+    text: "Beber de un Vaso",
+    color: "hsl(197 30% 43%)",
+    reaction: "dancing"
+  },
+  { 
+    text: "Usar Tijeras",
+    color: "hsl(173 58% 39%)",
+    reaction: "laughing"
+  },
+  { 
+    text: "Prender una Luz",
+    color: "hsl(43 74% 66%)",
+    reaction: "dancing" 
+  },
+  {
+    text: "Abrocharse un Botón",
+    color: "hsl(27 87% 67%)",
+    reaction: "shocked"
+  },
+  {
+    text: "Abrir la Llave del Agua",
+    color: "hsl(12 76% 61%)",
+    reaction: "dancing"
+  },
+  {
+    text: "Parar la Micro/Taxi",
     color: "hsl(350 60% 52%)",
     reaction: "laughing"
   },
   {
-    text: "Used Travel Mug",
-    color: "hsl(91 43% 54%)",
-    reaction: "laughing"
-  },
-      {
-    text: "Lavarse los Dientes",
-    color: "hsl(350 60% 52%)",
-    reaction: "laughing"
-  },
-  {
-    text: "Used Travel Mug",
+    text: "Usar Mouse",
     color: "hsl(91 43% 54%)",
     reaction: "laughing"
   },
   {
-    text: "One Solid Hug",
+    text: "Abrir la Puerta",
     color: "hsl(140 36% 74%)",
     reaction: "dancing"
   }
+
 ];
 
 const wheel = document.querySelector(".deal-wheel");
